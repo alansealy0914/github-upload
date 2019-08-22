@@ -1,13 +1,14 @@
+<br><br>
 <div class="row">
-    <h1>{{title}}</h1>
+&nbsp;&nbsp;&nbsp;<h4>{{title}}</h4>
 </div>
 <div class="row">
     <div class="col-sm-12">
         <form class="form-inline">
             <div class="form-group">
                 <div class="input-group">
-                <div class="input-group-addon"><i class="fa fa-search"></i></div>
-                <input #ordersFilter type="text" class="form-control" placeholder="Filter Orders" (keyup)="filterOrders(ordersFilter.value)">
+                
+                <input #ordersFilter type="text" class="form-control" placeholder="Search Orders" (keyup)="filterOrders(ordersFilter.value)">&nbsp;
                 </div> 
             </div>
             <button type="button" (click)="goToCreateOrder()" class="btn btn-info">Create Order</button>

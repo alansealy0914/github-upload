@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 export class HomeComponent {
     title: string;
     constructor(){
-        this.title = 'Awesome, Inc. Internal Ordering System';
+        this.title = 'Internal Ordering System';
     }
 }

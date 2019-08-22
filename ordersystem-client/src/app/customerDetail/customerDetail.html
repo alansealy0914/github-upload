@@ -1,5 +1,6 @@
+<br><br>
 <div class="row">
-    <h1>{{title}}: {{customer.fullName}}</h1>
+    &nbsp;&nbsp;&nbsp;<h4>{{title}}: {{customer.fullName}}</h4>
 </div>
 <div class="row">
     <div class="col-md-3">
@@ -21,10 +22,11 @@
 <discount *ngIf="customer.getsDiscount" 
     [customerDiscount]="customer.discount"
     (update)="updateDiscount($event)"></discount>
+    
 <div class="row" *ngIf="orders && orders.length > 0">
-    <div class="col-md-12">
-        <h3>Orders</h3>
-        <table class="table">
+    <div class="col-md-12"><br>
+        <h4>Orders</h4>
+        <table class="table table-hover table-bordered table-sm">
             <thead>
                 <tr>
                     <th>Order ID</th>

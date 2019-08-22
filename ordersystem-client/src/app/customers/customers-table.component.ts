@@ -8,7 +8,7 @@ import { Customer } from './customer.interface';
 })
 export class CustomersTableComponent {
     @Input() customers: Customer[];
-    constructor(){
+    constructor() {
 
     }
 }
