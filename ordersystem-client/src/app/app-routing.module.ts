@@ -14,6 +14,15 @@ import { ProductsComponent } from './products/products.component';
 import { ProductDetailComponent } from './productDetail/product-detail.component';
 import { ProductDetailResolver } from './productDetail/product-detail.resolver';
 
+
+// Angular 8 uses the standard compliant import() statement which will allow you to detect any issues ahead of time:
+/*const routes: Routes = [
+  {
+    path: 'product-list',
+    loadChildren: () => import('./product-list/product-list.module').then(m => m.ProductListModule)
+  }
+];*/
+
 const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'customers', component: CustomersComponent },
