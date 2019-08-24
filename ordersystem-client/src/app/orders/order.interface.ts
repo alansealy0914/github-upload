@@ -1,11 +1,11 @@
 export interface Order {
-    id: number,
-    customerName: string,
-    orderDate: string,
-    customerId: number,
-    totalCost: number,
-    totalSale: number,
-    totalItems: number,
+    id: number;
+    customerName: string;
+    orderDate: string;
+    customerId: number;
+    totalCost: number;
+    totalSale: number;
+    totalItems: number;
     items: [
         {
             quantity: number,
@@ -13,5 +13,5 @@ export interface Order {
             productName: string,
             itemPrice: number
         }
-    ]
+    ];
 }
