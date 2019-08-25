@@ -1,8 +1,8 @@
 <br><br>
 <div class="row">
-    <h5>{{title}}: <small>{{product.name}}</small></h5>
+    <h5>{{title}}: &nbsp;&nbsp;<small>{{product.name}}</small></h5>
 </div><br>
-<div class="row">
+<!--<div class="row">
     <div class="col-md-2">
         <b>Color:</b>
     </div>
@@ -17,4 +17,23 @@
     <div class="col-md-4 end">
         {{product.price | currency:'USD':'symbol'}}
     </div>
+</div>-->
+<div class="col-md-3">
+        <table class="table table-bordered table-sm table-hover">
+                <thead class="thead-primary">
+                  <tr>
+                    <th style="font-size: 14px" scope="col">Color:</th>
+                    <th style="font-size: 14px" scope="col">Price:</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="font-size: 14px" scope="row">{{product.color}}</td>
+                    <td style="font-size: 14px">{{product.price | currency:'USD':'symbol'}}</td>
+                    
+                  </tr>
+                  
+                </tbody>
+              </table>
 </div>

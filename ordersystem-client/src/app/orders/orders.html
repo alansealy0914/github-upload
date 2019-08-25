@@ -1,47 +1,46 @@
-<br><br>
+<br>
 <div class="row">
-&nbsp;&nbsp;&nbsp;<h4>{{title}}</h4>
+&nbsp;&nbsp;&nbsp;<h5>{{title}}</h5>
 </div>
 <div class="row">
     <div class="col-sm-12">
         <form class="form-inline">
             <div class="form-group">
                 <div class="input-group">
-                
-                <input #ordersFilter type="text" class="form-control" placeholder="Search Orders" (keyup)="filterOrders(ordersFilter.value)">&nbsp;
+                    <input #ordersFilter type="text" class="form-control" style="width:200px; height:30px; font-size: 12px" placeholder="Search Customer Name" (keyup)="filterOrders(ordersFilter.value)">&nbsp;
                 </div> 
             </div>
-            <button type="button" (click)="goToCreateOrder()" class="btn btn-info">Create Order</button>
+            <button type="button" (click)="goToCreateOrder()" class="btn btn-info btn-sm">Create Order</button>
         </form>
     </div>
 </div>
 <div class="row">
     <div class="col-sm-12">
-        <table class="table">
+        <table class="table table-sm table-hover table-bordered">
             <thead>
                 <tr>
-                    <th>
+                    <th style="font-size: 14px">
                         <a [href]="" (click)="sortOrders('id')">
                             Order Id 
                             <span *ngIf="sortType == 'id' && !sortReverse" class="fa fa-caret-down"></span>
                             <span *ngIf="sortType == 'id' && sortReverse" class="fa fa-caret-up"></span>
                         </a>
                     </th>
-                    <th>
+                    <th style="font-size: 14px">
                         <a [href]="" (click)="sortOrders('customerName')">
                             Customer Name
                             <span *ngIf="sortType == 'customerName' && !sortReverse" class="fa fa-caret-down"></span>
                             <span *ngIf="sortType == 'customerName' && sortReverse" class="fa fa-caret-up"></span>
                         </a>
                     </th>
-                    <th>
+                    <th style="font-size: 14px">
                         <a [href]="" (click)="sortOrders('totalItems')">
                             Total Items
                             <span *ngIf="sortType == 'totalItems' && !sortReverse" class="fa fa-caret-down"></span>
                             <span *ngIf="sortType == 'totalItems' && sortReverse" class="fa fa-caret-up"></span>
                         </a>
                     </th>
-                    <th>
+                    <th style="font-size: 14px">
                         <a [href]="" (click)="sortOrders('totalSale')">
                             Total Sale 
                             <span *ngIf="sortType == 'totalSale' && !sortReverse" class="fa fa-caret-down"></span>
@@ -52,10 +51,10 @@
             </thead>
             <tbody>
                 <tr *ngFor="let order of filteredOrders">
-                    <td><a [routerLink]="['/orders', order.id]">{{order.id}}</a></td>
-                    <td>{{order.customerName}}</td>
-                    <td>{{order.totalItems}}</td>
-                    <td>{{order.totalSale | currency:'USD':'symbol'}}</td>
+                    <td style="font-size: 14px"><a [routerLink]="['/orders', order.id]">{{order.id}}</a></td>
+                    <td style="font-size: 14px">{{order.customerName}}</td>
+                    <td style="font-size: 14px">{{order.totalItems}}</td>
+                    <td style="font-size: 14px">{{order.totalSale | currency:'USD':'symbol'}}</td>
                 </tr>
             </tbody>
         </table>

@@ -20,7 +20,7 @@ export class OrdersComponent implements OnInit {
   title = 'Orders';
 
   sortType: string;
-  sortReverse: boolean = false;
+  sortReverse = false;
 
   constructor(
     private orderService: OrderService,
@@ -29,7 +29,7 @@ export class OrdersComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    let ordersData = observableFrom(this.orderService.getOrders());
+    const ordersData = observableFrom(this.orderService.getOrders());
     observableForkJoin([
       ordersData,
       this.customerService.getCustomers()
@@ -37,7 +37,8 @@ export class OrdersComponent implements OnInit {
       this.orders = data[0] as Order[];
       this.customers = data[1] as Customer[];
       this.orders.forEach(order => {
-        var customer = _.find(this.customers, customer => {
+        // tslint:disable-next-line: no-shadowed-variable
+        const customer = _.find(this.customers, (customer: { id: number; }) => {
           return order.customerId === customer.id;
         });
         order.customerName = customer.fullName;
@@ -48,9 +49,10 @@ export class OrdersComponent implements OnInit {
     });
   }
 
-  //I again used arrow syntax in the videos for the below functions,
-  //which you shouldn't do because they transpile differently.
-  //Everything else is exactly the same.
+  // I used arrow syntax for the below functions,
+  // which you shouldn't do because they transpile differently.
+  // Everything else is exactly the same.
+
   goToCreateOrder() {
     this.router.navigate(['/orders/create']);
   }
@@ -64,10 +66,10 @@ export class OrdersComponent implements OnInit {
   dynamicSort(property) {
     let sortOrder = -1;
 
-    if (this.sortReverse) sortOrder = 1;
+    if (this.sortReverse) { sortOrder = 1; }
 
     return function(a, b) {
-      let result =
+      const result =
         a[property] < b[property] ? -1 : a[property] > b[property] ? 1 : 0;
 
       return result * sortOrder;
@@ -77,8 +79,9 @@ export class OrdersComponent implements OnInit {
   filterOrders(search: string) {
     this.filteredOrders = this.orders.filter(o =>
       Object.keys(o).some(k => {
-        if (typeof o[k] === 'string')
+        if (typeof o[k] === 'string') {
           return o[k].toLowerCase().includes(search.toLowerCase());
+        }
       })
     );
   }
