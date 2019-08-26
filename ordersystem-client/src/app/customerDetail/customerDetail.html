@@ -1,21 +1,21 @@
-<br><br>
+<br>
 <div class="row">
-    &nbsp;&nbsp;&nbsp;<h4>{{title}}: {{customer.fullName}}</h4>
+    &nbsp;&nbsp;&nbsp;<h5>{{title}}: <span style="margin-left: 46px">{{customer.fullName}}</span></h5>
 </div>
 <div class="row">
-    <div class="col-md-3">
+    <div class="col-md-2">
         <b>Address:</b>
     </div>
-    <div class="col-md-4 end">
-        {{address}}
+    <div class="col-md-5 end">
+        <span style="margin-left: 40px">{{address}}</span>
     </div>
 </div>
 <div class="row">
-    <div class="col-md-3">
+    <div class="col-md-2">
         <b>Gets Discount:</b>
     </div>
-    <div class="col-md-4 end">
-        {{customer.getsDiscount ? 'Yes' : 'No'}}
+    <div class="col-md-3 end">
+        <span style="margin-left: 42px">{{customer.getsDiscount ? 'Yes' : 'No'}}</span>   
     </div>
 </div>
 <br/>
@@ -25,7 +25,7 @@
     
 <div class="row" *ngIf="orders && orders.length > 0">
     <div class="col-md-12"><br>
-        <h4>Orders</h4>
+        <h5>Orders</h5>
         <table class="table table-hover table-bordered table-sm">
             <thead>
                 <tr>
