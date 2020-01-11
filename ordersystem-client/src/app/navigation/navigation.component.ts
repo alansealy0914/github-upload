@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
     templateUrl: './navigation.html'
 })
 export class NavigationComponent {
-    companyName = 'IOS Systems, Inc';
+    companyName = 'SESME';
 }
