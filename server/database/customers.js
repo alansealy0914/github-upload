@@ -40,6 +40,7 @@ var customers = [
                 discountName: "Friends & Family"
             } 
         }
+        
     ];
 
 module.exports = customers;
