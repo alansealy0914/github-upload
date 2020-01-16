@@ -8,7 +8,7 @@ import { Customer } from './customer.interface';
 })
 export class CustomersComponent implements OnInit {
   customers: Customer[];
-  title = 'Customers';
+  title = 'Global Tenant:';
   constructor(private customerService: CustomerService) {}
 
   ngOnInit(): void {

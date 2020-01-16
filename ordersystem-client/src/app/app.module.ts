@@ -24,12 +24,25 @@ import { ProductDetailComponent } from './productDetail/product-detail.component
 import { ProductService } from './products/product.service';
 import { AddressService } from './shared/address.service';
 
+
+
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
+
+
+
 @NgModule({
     imports: [
         BrowserModule,
         HttpClientModule,
         FormsModule,
-        AppRoutingModule
+        AppRoutingModule,
+        Ng2SearchPipeModule,
+        NgxPaginationModule,
+        BrowserAnimationsModule,
+        ToastrModule.forRoot()
     ],
     declarations: [
         AppComponent,

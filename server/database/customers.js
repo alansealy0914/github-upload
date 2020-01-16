@@ -1,11 +1,12 @@
 var customers = [
         {
             id: 1,
-            fullName: "Jim Smith",
+            fullName: "American Airlines",
             address1: "123 Main Street",
             address2: null,
-            city: "Orlando",
-            state: "FL",
+            //customerId: 100,
+            city: "Chicago",
+            state: "IL",
             zip: "32819",
             getsDiscount: true,
             discount: {
@@ -19,6 +20,7 @@ var customers = [
             fullName: "Sally Sparrow",
             address1: "456 Wallaby Way",
             address2: "Apt 23",
+            //customerId: 200,
             city: "Orlando",
             state: "FL",
             zip: "32802",
@@ -30,6 +32,7 @@ var customers = [
             fullName: "Bolokada Conde",
             address1: "255 McFarland Drive",
             address2: null,
+            //customerId: 300,
             city: "Portland",
             state: "OR",
             zip: "97204",

@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
     selector: 'ordersystem-app',
     template: `
     <navigation></navigation>
-    <div class="container">
+    <div class="container"><hr>
         <router-outlet></router-outlet>
     </div>
     `
