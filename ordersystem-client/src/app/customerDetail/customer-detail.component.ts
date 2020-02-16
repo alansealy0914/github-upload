@@ -12,7 +12,7 @@ import { AddressService } from '../shared/address.service';
 })
 export class CustomerDetailComponent implements OnInit {
     customer: Customer;
-    title = 'Customer Detail';
+    //title = 'Customer Detail';
     address: string;
     orders: any[];
 

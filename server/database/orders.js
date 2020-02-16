@@ -3,8 +3,8 @@ var orders = [
             id: 1,
             orderDate: '2017-06-25T00:30:43.16-07:00',
             customerId: 2,
-            totalCost: 15.00,
-            totalSale: 15.00,
+            totalCost: 1559.00,
+            totalSale: 1559.00,
             totalItems: 3,
             items: [
                 {
@@ -21,8 +21,8 @@ var orders = [
             id: 2,
             orderDate: '2017-06-29T00:30:43.16-07:00',
             customerId: 1,
-            totalCost: 10,
-            totalSale: 9,
+            totalCost: 6299.98,
+            totalSale: 5699.99,
             totalItems: 4,
             items: [
                 {
@@ -39,8 +39,8 @@ var orders = [
             id: 3,
             orderDate: '2017-07-04T00:30:43.16-07:00',
             customerId: 3,
-            totalCost: 5,
-            totalSale: 4.75,
+            totalCost: 1200.00,
+            totalSale: 1140.00,
             totalItems: 2,
             items: [
                 {
@@ -52,9 +52,9 @@ var orders = [
         {
             id: 4,
             orderDate: '2017-08-04T00:30:43.16-07:00',
-            customerId: 2,
-            totalCost: 25,
-            totalSale: 25,
+            customerId: 4,
+            totalCost: 19999.90,
+            totalSale: 19000.00,
             totalItems: 10,
             items: [
                 {

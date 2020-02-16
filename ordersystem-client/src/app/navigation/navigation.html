@@ -18,9 +18,9 @@
                     <button class="btn btn-secondary btn-sm dropdown-toggle" style="box-shadow: 0px 8px 16px 0px rgba(14, 13, 13, 0.342); font-size: 12px"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       My Parts
                     </button>
-                    <div class="dropdown-menu" style="font-size: 11px" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" routerLink="/parts">All My Parts</a>
-                      <a class="dropdown-item" routerLink="/partDetail">G7404-124-01</a>
+                    <div class="dropdown-menu bg-secondary" style="font-size: 11px" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#!/products/2">All My Parts</a>
+                      <a class="dropdown-item" href="#!/customers/1">G7404-124-01</a>
                       <a class="dropdown-item" href="#!/customers/2">G7404-124-02</a>
                       <a class="dropdown-item" href="#!/customers/4">G7404-124-04</a>
                       <a class="dropdown-item" href="#!/customers/6">G7507-124-06</a>
@@ -34,14 +34,15 @@
                     <button class="btn btn-secondary btn-sm dropdown-toggle" style="box-shadow: 0px 8px 16px 0px rgba(14, 13, 13, 0.342); font-size: 12px" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Document Types
                     </button>
-                    <div class="dropdown-menu" style="font-size: 11px" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Acceptance Test Procedure (12)</a>
-                      <a class="dropdown-item" href="#">Component Maint Manual (3)</a>
-                      <a class="dropdown-item" href="#">Outline/Wiring Diagram (6)</a>
+                    <div class="dropdown-menu bg-secondary" style="font-size: 11px" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" routerLink="/doc-types" style=color:white>Acceptance Test Procedure (12)</a>
+                      <a class="dropdown-item" routerLink="/doc-types" style=color:white>Component Maint Manual (3)</a>
+                      <a class="dropdown-item" routerLink="/doc-types" style=color:white>Outline/Wiring Diagram (6)</a>
                     </div>
                   <!--</div>-->
                 </li>
-                <li><button type="button" class="btn btn-link">Service Information Letters</button></li>
+                <li><button type="button" class="btn btn-link">
+                  <a routerLink="/sils">Service Information Letters</a></button></li>
             <!--<li><a routerLink="/login" class="nav-link"><i class="fa fa-user-circle text-secondary" style="font-size:20px"></i>&nbsp;Login</a></li>-->
             <li><a routerLink="/logout" class="nav-link"><span style="margin-left: 10px"><i class="text-secondary fa fa-user-circle" style="font-size:20px"></i>&nbsp;LogOut</span></a></li>
                 <!--<li><button *ngIf="loginService.isUserLoggedIn()" type="button" class="btn btn-link">Service Information Letters</button></li>

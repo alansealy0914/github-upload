@@ -9,7 +9,7 @@
 
 
 <table class="table bg-transparent">
-    <thead>
+    <thead style="font-size: 12px">
         <tr>
             <th>Full Name</th>
             <th>Address Line 1</th>
@@ -21,7 +21,7 @@
             <th>Discount?</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody style="font-size: 12px">
         <tr *ngFor="let customer of customers | filter:filter | paginate: { itemsPerPage: 1, currentPage: p }; let i = index">
             <td><a [routerLink]="['/customers', customer.id]">{{customer.fullName}}</a></td>
             <td>{{customer.address1}}</td>

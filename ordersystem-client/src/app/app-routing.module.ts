@@ -13,6 +13,8 @@ import { CreateOrderComponent } from './createOrder/create-order.component';
 import { ProductsComponent } from './products/products.component';
 import { ProductDetailComponent } from './productDetail/product-detail.component';
 import { ProductDetailResolver } from './productDetail/product-detail.resolver';
+import { SilsComponent } from './sils/sils.component';
+import { DocTypesComponent } from './doc-types/doc-types.component';
 
 
 // Angular 8 uses the standard compliant import() statement which will allow you to detect any issues ahead of time:
@@ -32,6 +34,8 @@ const routes: Routes = [
     { path: 'orders', component: OrdersComponent },
     { path: 'products', component: ProductsComponent },
     { path: 'products/:productId', component: ProductDetailComponent, resolve: { product: ProductDetailResolver }   },
+    { path: 'sils', component: SilsComponent },
+    { path: 'doc-types', component: DocTypesComponent },
     { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 

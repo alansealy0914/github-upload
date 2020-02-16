@@ -1,33 +1,35 @@
-<br>
+
 <div class="row">
-    &nbsp;&nbsp;&nbsp;<h5>{{title}}: <span style="margin-left: 46px">{{customer.fullName}}</span></h5>
-</div>
+    <!---&nbsp;&nbsp;&nbsp;<h5>{{title}}: <span style="margin-left: 46px">{{customer.fullName}}</span></h5>-->
+    <strong>{{customer.fullName}}</strong>
+</div><br>
 <div class="row">
     <div class="col-md-2">
-        <b>Address:</b>
+        <strong style="font-size: 12px;">Address:</strong>
     </div>
     <div class="col-md-5 end">
-        <span style="margin-left: 40px">{{address}}</span>
+        <span style="margin-left: 40px; font-size: 12px;">{{address}}</span>
     </div>
 </div>
 <div class="row">
     <div class="col-md-2">
-        <b>Gets Discount:</b>
+        <strong style="font-size: 12px;">Gets Discount:</strong>
     </div>
     <div class="col-md-3 end">
-        <span style="margin-left: 42px">{{customer.getsDiscount ? 'Yes' : 'No'}}</span>   
+        <span style="margin-left: 42px; font-size: 12px;">{{customer.getsDiscount ? 'Yes' : 'No'}}</span>   
     </div>
 </div>
-<br/>
 <discount *ngIf="customer.getsDiscount" 
     [customerDiscount]="customer.discount"
-    (update)="updateDiscount($event)"></discount>
+    (update)="updateDiscount($event)">
+</discount>
+<br>
     
 <div class="row" *ngIf="orders && orders.length > 0">
-    <div class="col-md-12"><br>
-        <h5>Orders</h5>
+    <div class="col-md-12">
+        <p>Orders</p>
         <table class="table table-hover table-bordered table-sm">
-            <thead>
+            <thead style="font-size: 12px">
                 <tr>
                     <th>Order ID</th>
                     <th>Order Date</th>
@@ -35,7 +37,7 @@
                     <th>Total Sale</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody style="font-size: 12px;">
                 <tr *ngFor="let order of orders">
                     <td>
                         <a href="#/orders/{{order.id}}">{{order.id}}</a>

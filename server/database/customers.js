@@ -17,7 +17,7 @@ var customers = [
         },
         {
             id: 2,
-            fullName: "Sally Sparrow",
+            fullName: "United Airlines Sparrow",
             address1: "456 Wallaby Way",
             address2: "Apt 23",
             //customerId: 200,
@@ -29,7 +29,7 @@ var customers = [
         },
         {
             id: 3,
-            fullName: "Bolokada Conde",
+            fullName: "Frontier Airlines",
             address1: "255 McFarland Drive",
             address2: null,
             //customerId: 300,
@@ -42,7 +42,25 @@ var customers = [
                 discountPercent: 5,
                 discountName: "Friends & Family"
             } 
+        },
+
+        {
+            id: 4,
+            fullName: "Delta Airlines",
+            address1: "255 McFarland Drive",
+            address2: null,
+            //customerId: 300,
+            city: "Philadelphia",
+            state: "PA",
+            zip: "19720",
+            getsDiscount: true,
+            discount: {
+                discountId: 2,
+                discountPercent: 5,
+                discountName: "Friends & Family"
+            } 
         }
+
         
     ];
 

@@ -1,6 +1,6 @@
-<br><br>
+
 <div class="row">
-    <h5>{{title}}: &nbsp;&nbsp;<small>{{product.name}}</small></h5>
+    <strong>{{title}}: &nbsp;&nbsp;<small>{{product.name}}</small></strong>
 </div><br>
 <!--<div class="row">
     <div class="col-md-2">
@@ -21,29 +21,31 @@
 
 
 <div class="row">
-  <div class="col-sm-4">
+  <div class="col-sm-6">
     <table class="table table-bordered table-sm table-hover">
     <thead class="thead-primary">
       <tr>
-        <th style="font-size: 14px" scope="col">Product ID:</th>
-        <th style="font-size: 14px" scope="col">Description:</th>
-        <th style="font-size: 14px" scope="col">Price:</th>
+        <th style="font-size: 12px" scope="col">Product ID:</th>
+        <th style="font-size: 12px" scope="col">Description:</th>
+        <th style="font-size: 12px" scope="col">Item Price:</th>
         
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td style="font-size: 14px" scope="row">{{product.id}}</td>
-        <td style="font-size: 14px" scope="row">{{product.description}}</td>
-        <td style="font-size: 14px">{{product.price | currency:'USD':'symbol'}}</td>
+        <td style="font-size: 12px" scope="row">{{product.id}}</td>
+        <td style="font-size: 12px" scope="row">{{product.description}}</td>
+        <td style="font-size: 12px">{{product.price | currency:'USD':'symbol'}}</td>
         
       </tr>
       
     </tbody>
   </table>
+
+<br><br>
   <div class="row">
   <div class="form-group" style="margin-left: 15px;">
-    <label for="password">Terms and conditions:</label>
+    <strong style="font-size: 12px;" for="password">Terms and conditions:</strong>
     <div style="width:360px;height:80px;overflow:scroll;padding-left:20px;background-color:rgb(238, 236, 217);color:#714D03;border:4px double #DEBB07;font-size: 10px">
         <p>Introduction:<br>
             These Website Standard Terms And Conditions (these "Terms" or these "Website Standard Terms") contained herein on this webpage, shall govern your use of this website, 
@@ -52,22 +54,26 @@
             Website Standard Terms And Conditions. This website is not for use by any minors (defined as those who are not at least 18 years of age), and you must not use this Website
             if you are a minor. 
         </p>
-    </div>
+    </div><br>
     <label class="form-check-label" style="margin-top: 20px;">
-        <span style="margin-left:40px"><input type="checkbox" class="form-check-input" value=""><small>Accept</small></span><br>    
+        <span style="margin-left:40px; color:red"><input type="checkbox" class="form-check-input" value=""><small>Accept</small></span><br>    
     </label>
-    <span style="margin-left: 20px"><button type="button"><small>Submit</small></button></span>
-</div></div>
+    <span style="margin-left: 20px">
+      <button type="button" class="btn btn-success" style="box-shadow: 0px 8px 16px 0px rgba(14, 13, 13, 0.342); font-size: 12px"><small>Submit</small></button>
+    </span>
+    <span style="margin-left: 20px">
+      <button type="button" class="btn btn-info" style="box-shadow: 0px 8px 16px 0px rgba(14, 13, 13, 0.342); font-size: 12px">
+        <a routerLink="/sils">
+        <small class="text-white">Service Information Letters (Sils)</small></a></button>
+    </span>
 </div>
-  <div class="col-sm-8">
-    <img src="/assets/sky-tec-starter-200.png" alt="Logo" style="margin-left:100px; width:200px">
-    
+</div>
+</div>
+  <div class="col-sm-6">
+    <img src="{{ product.imageUrl }}" alt="Logo" style="margin-left:100px; width:200px">
   </div>
-  
-    
-
 </div>
-
+ 
 
 
 

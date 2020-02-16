@@ -13,7 +13,7 @@ import { ProductService } from '../products/product.service';
   templateUrl: './orderDetail.html'
 })
 export class OrderDetailComponent implements OnInit {
-  title = 'Order Detail';
+  title = 'Orders';
   customer: Customer;
   order: Order;
   dataLoaded: boolean = false;

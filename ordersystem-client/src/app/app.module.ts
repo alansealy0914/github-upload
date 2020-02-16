@@ -4,6 +4,7 @@ import 'lodash';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -24,12 +25,13 @@ import { ProductDetailComponent } from './productDetail/product-detail.component
 import { ProductService } from './products/product.service';
 import { AddressService } from './shared/address.service';
 
-
-
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { SilsComponent } from './sils/sils.component';
+import { SilsTableComponent } from './sils-table/sils-table.component';
+import { DocTypesComponent } from './doc-types/doc-types.component';
 
 
 
@@ -42,7 +44,9 @@ import { ToastrModule } from 'ngx-toastr';
         Ng2SearchPipeModule,
         NgxPaginationModule,
         BrowserAnimationsModule,
-        ToastrModule.forRoot()
+        ToastrModule.forRoot(),
+        ReactiveFormsModule,
+        
     ],
     declarations: [
         AppComponent,
@@ -56,7 +60,14 @@ import { ToastrModule } from 'ngx-toastr';
         NavigationComponent,
         ProductsComponent,
         ProductDetailComponent,
-        OrderDetailComponent
+        OrderDetailComponent,
+        SilsComponent,
+        SilsTableComponent,
+        DocTypesComponent,
+        
+        
+        
+        
     ],
     entryComponents: [
         HomeComponent,
@@ -69,7 +80,8 @@ import { ToastrModule } from 'ngx-toastr';
         NavigationComponent,
         ProductsComponent,
         ProductDetailComponent,
-        OrderDetailComponent
+        OrderDetailComponent,
+        
     ],
     providers: [
         CustomerService,
