@@ -11,7 +11,8 @@ export class CustomersTableComponent {
     constructor(private router: Router) {
 
     }
+
     goToCreateOrder() {
         this.router.navigate(['/orders/create']);
-      }
+    }
 }
