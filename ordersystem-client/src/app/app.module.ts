@@ -32,6 +32,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { SilsComponent } from './sils/sils.component';
 import { SilsTableComponent } from './sils-table/sils-table.component';
 import { DocTypesComponent } from './doc-types/doc-types.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -64,6 +65,7 @@ import { DocTypesComponent } from './doc-types/doc-types.component';
         SilsComponent,
         SilsTableComponent,
         DocTypesComponent,
+        LoginComponent,
         
         
         
