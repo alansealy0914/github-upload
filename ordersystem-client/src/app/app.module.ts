@@ -33,6 +33,7 @@ import { SilsComponent } from './sils/sils.component';
 import { SilsTableComponent } from './sils-table/sils-table.component';
 import { DocTypesComponent } from './doc-types/doc-types.component';
 import { LoginComponent } from './login/login.component';
+import { LogoutComponent } from './logout/logout.component';
 
 
 
@@ -66,6 +67,7 @@ import { LoginComponent } from './login/login.component';
         SilsTableComponent,
         DocTypesComponent,
         LoginComponent,
+        LogoutComponent,
         
         
         
