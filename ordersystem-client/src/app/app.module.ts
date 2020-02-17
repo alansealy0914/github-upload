@@ -36,7 +36,6 @@ import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 
 
-
 @NgModule({
     imports: [
         BrowserModule,
@@ -50,6 +49,7 @@ import { LogoutComponent } from './logout/logout.component';
         ReactiveFormsModule,
         
     ],
+
     declarations: [
         AppComponent,
         HomeComponent,
@@ -68,11 +68,9 @@ import { LogoutComponent } from './logout/logout.component';
         DocTypesComponent,
         LoginComponent,
         LogoutComponent,
-        
-        
-        
-        
+               
     ],
+
     entryComponents: [
         HomeComponent,
         CustomersComponent,
@@ -87,14 +85,17 @@ import { LogoutComponent } from './logout/logout.component';
         OrderDetailComponent,
         
     ],
+
     providers: [
         CustomerService,
         OrderService,
         ProductService,
-        AddressService
+        AddressService,
     ],
+
     bootstrap: [AppComponent]
 })
+
 export class AppModule {
     constructor() { }
 }
