@@ -19,7 +19,13 @@ import { DocTypesComponent } from './doc-types/doc-types.component';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { AuthGuardService } from '././service/auth-guard.service';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { AtpComponent } from './atp/atp.component';
+import { CmmComponent } from './cmm/cmm.component';
+import { OwdComponent } from './owd/owd.component';
 
+
+//import { AuthGuard } from "./shared/auth.guard";
 
 // Angular 8 uses the standard compliant import() statement which will allow you to detect any issues ahead of time:
 /*const routes: Routes = [
@@ -44,12 +50,18 @@ const routes: Routes = [
     { path: 'products/:productId', component: ProductDetailComponent, resolve: { product: ProductDetailResolver }   },
     { path: 'sils', component: SilsComponent },
     { path: 'doc-types', component: DocTypesComponent },
+    { path: 'atp', component: AtpComponent },
+    { path: 'cmm', component: CmmComponent },
+    { path: 'owd', component: OwdComponent },  //canActivate: [AuthGuardService],
+
     //{ path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
 @NgModule({
     imports: [RouterModule.forRoot(routes),
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
 
     exports: [RouterModule],

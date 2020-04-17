@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
       this.invalidLogin = false;
     } else {
       this.invalidLogin = true;
-      this.toastr.error('Your login was unsuccessful.');
+      this.toastr.error('Aww aww aww! You screwed up!');
     }
   }
 }

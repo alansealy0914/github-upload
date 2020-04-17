@@ -1,7 +1,8 @@
-
+<strong><i>- Customer Prophile - </i></strong>
+<br><br>
 <div class="row">
     <!---&nbsp;&nbsp;&nbsp;<h5>{{title}}: <span style="margin-left: 46px">{{customer.fullName}}</span></h5>-->
-    <strong>{{customer.fullName}}</strong>
+    <p>{{customer.fullName}}</p>
 </div><br>
 <div class="row">
     <div class="col-md-2">
@@ -38,7 +39,7 @@
                 </tr>
             </thead>
             <tbody style="font-size: 12px;">
-                <tr *ngFor="let order of orders">
+                <tr *ngFor="let order of orders | filter:filter | paginate: { itemsPerPage: 3, currentPage: p }; let i = index">
                     <td>
                         <a href="#/orders/{{order.id}}">{{order.id}}</a>
                     </td>
@@ -50,3 +51,6 @@
         </table>
     </div>
 </div>
+<small><pagination-controls (pageChange)="p = $event"></pagination-controls></small>
+
+

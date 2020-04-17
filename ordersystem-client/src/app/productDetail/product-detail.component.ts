@@ -19,4 +19,8 @@ export class ProductDetailComponent implements OnInit {
             this.product = data.product;
         });
     }
+
+    goToCreateOrder() {
+        this.router.navigate(['/orders/create']);
+    }
 }

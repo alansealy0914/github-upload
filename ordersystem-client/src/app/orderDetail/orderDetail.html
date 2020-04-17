@@ -3,8 +3,8 @@
     
     <div class="row">
         <div class="col-md-3">
-            <strong>{{title}}</strong><i>
-            <br>
+            <strong><i>-- {{title}} --</i></strong><i>
+            <br><br>
             <label>order id:</label></i><small class="m-4">{{order.id}}</small>
             
         </div>
@@ -24,7 +24,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let item of order.items">
+                    <tr *ngFor="let item of order.items | paginate: { itemsPerPage: 3, currentPage: p }; let i = index">
                         <td style="font-size: 12px"><a href="#/products/{{item.productId}}">{{item.productId}}</a></td>
                         <td style="font-size: 12px">{{item.productName}}</td>
                         <td style="font-size: 12px">{{item.quantity}}</td>
@@ -35,6 +35,7 @@
                 </tbody>
             </table>
         </div>
+        <small><pagination-controls (pageChange)="p = $event"></pagination-controls></small>
     </div><br><br>
 
     <div class="col-sm-12">

@@ -3,7 +3,10 @@ import 'lodash';
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AuthInterceptor } from './shared/authconfig.interceptor';
+
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 
@@ -34,6 +37,12 @@ import { SilsTableComponent } from './sils-table/sils-table.component';
 import { DocTypesComponent } from './doc-types/doc-types.component';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
+import { SignupComponent } from './signup/signup.component';
+import { SigninComponent } from './signin/signin.component';
+import { AtpComponent } from './atp/atp.component';
+import { CmmComponent } from './cmm/cmm.component';
+import { OwdComponent } from './owd/owd.component';
+
 
 
 @NgModule({
@@ -68,6 +77,13 @@ import { LogoutComponent } from './logout/logout.component';
         DocTypesComponent,
         LoginComponent,
         LogoutComponent,
+        SignupComponent,
+        SigninComponent,
+        AtpComponent,
+        CmmComponent,
+        OwdComponent,
+        
+        
                
     ],
 
@@ -83,10 +99,18 @@ import { LogoutComponent } from './logout/logout.component';
         ProductsComponent,
         ProductDetailComponent,
         OrderDetailComponent,
-        
+        AtpComponent,
+        CmmComponent,
+        OwdComponent
     ],
 
     providers: [
+        {
+            provide: HTTP_INTERCEPTORS,
+            useClass: AuthInterceptor,
+            multi: true
+        },
+        
         CustomerService,
         OrderService,
         ProductService,
