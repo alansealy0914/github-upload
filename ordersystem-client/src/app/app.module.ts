@@ -33,7 +33,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { SilsComponent } from './sils/sils.component';
-import { SilsTableComponent } from './sils-table/sils-table.component';
+
 import { DocTypesComponent } from './doc-types/doc-types.component';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
@@ -42,6 +42,8 @@ import { SigninComponent } from './signin/signin.component';
 import { AtpComponent } from './atp/atp.component';
 import { CmmComponent } from './cmm/cmm.component';
 import { OwdComponent } from './owd/owd.component';
+import { SilsDetailComponent } from './sils-detail/sils-detail.component';
+import { SilsTableComponent } from './sils/sils-table.component';
 
 
 
@@ -73,7 +75,6 @@ import { OwdComponent } from './owd/owd.component';
         ProductDetailComponent,
         OrderDetailComponent,
         SilsComponent,
-        SilsTableComponent,
         DocTypesComponent,
         LoginComponent,
         LogoutComponent,
@@ -82,6 +83,8 @@ import { OwdComponent } from './owd/owd.component';
         AtpComponent,
         CmmComponent,
         OwdComponent,
+        SilsDetailComponent,
+        SilsTableComponent,
         
         
                
@@ -101,7 +104,8 @@ import { OwdComponent } from './owd/owd.component';
         OrderDetailComponent,
         AtpComponent,
         CmmComponent,
-        OwdComponent
+        OwdComponent,
+        SilsTableComponent
     ],
 
     providers: [
