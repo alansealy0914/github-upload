@@ -6,9 +6,7 @@ var sils = [
         description: 'Twin engine Cessna Piper left wing diesel engine starter',
         notes: 'Use only with commercial jet-diesel engines. Article:X-2234-2234-1123-4',
         date: 'January 17, 2020',
-        update: 'none'
-        
-        
+        update: 'none'    
     },
     {
         id: 2,

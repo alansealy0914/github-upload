@@ -43,7 +43,8 @@ import { AtpComponent } from './atp/atp.component';
 import { CmmComponent } from './cmm/cmm.component';
 import { OwdComponent } from './owd/owd.component';
 import { SilsDetailComponent } from './sils-detail/sils-detail.component';
-import { SilsTableComponent } from './sils/sils-table.component';
+import { SilService } from './sils/sil.service';
+
 
 
 
@@ -84,7 +85,7 @@ import { SilsTableComponent } from './sils/sils-table.component';
         CmmComponent,
         OwdComponent,
         SilsDetailComponent,
-        SilsTableComponent,
+        
         
         
                
@@ -105,7 +106,7 @@ import { SilsTableComponent } from './sils/sils-table.component';
         AtpComponent,
         CmmComponent,
         OwdComponent,
-        SilsTableComponent
+        
     ],
 
     providers: [
@@ -119,6 +120,7 @@ import { SilsTableComponent } from './sils/sils-table.component';
         OrderService,
         ProductService,
         AddressService,
+        SilService
     ],
 
     bootstrap: [AppComponent]
