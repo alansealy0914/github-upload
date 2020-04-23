@@ -25,7 +25,7 @@ import { SilService } from '../sils/sil.service';
 @Component({
   selector: 'app-sils-detail',
   templateUrl: './sil-detail.component.html',
-  //styleUrls: ['./sils-detail.component.css']
+  styleUrls: ['./sil-detail.component.css']
 })
 export class SilDetailComponent implements OnInit {
     sil: Sil;
