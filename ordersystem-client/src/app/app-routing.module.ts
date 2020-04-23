@@ -10,8 +10,8 @@ import { CustomerDetailComponent } from './customerDetail/customer-detail.compon
 import { CustomerDetailResolver } from './customerDetail/customer-detail.resolver';
 
 import { SilsComponent } from './sils/sils.component';
-
-
+import { SilDetailResolver } from './sil-detail/sil-detail.resolver';
+import { SilDetailComponent } from './sil-detail/sil-detail.component';
 
 import { OrdersComponent } from './orders/orders.component';
 import { OrderDetailComponent } from './orderDetail/order-detail.component';
@@ -22,8 +22,6 @@ import { ProductsComponent } from './products/products.component';
 import { ProductDetailComponent } from './productDetail/product-detail.component';
 import { ProductDetailResolver } from './productDetail/product-detail.resolver';
 
-
-
 import { DocTypesComponent } from './doc-types/doc-types.component';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
@@ -32,6 +30,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AtpComponent } from './atp/atp.component';
 import { CmmComponent } from './cmm/cmm.component';
 import { OwdComponent } from './owd/owd.component';
+
 
 
 //import { AuthGuard } from "./shared/auth.guard";
@@ -62,7 +61,7 @@ const routes: Routes = [
 
 
     { path: 'sils', component: SilsComponent },
-   
+    { path: 'sils/:silId', component: SilDetailComponent, resolve: { sil: SilDetailResolver } },
 
 
 
