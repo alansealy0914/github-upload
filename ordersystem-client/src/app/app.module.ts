@@ -44,6 +44,7 @@ import { CmmComponent } from './cmm/cmm.component';
 import { OwdComponent } from './owd/owd.component';
 
 import { SilService } from './sils/sil.service';
+import { SilDetailComponent } from './sil-detail/sil-detail.component';
 
 
 
@@ -84,6 +85,7 @@ import { SilService } from './sils/sil.service';
         AtpComponent,
         CmmComponent,
         OwdComponent,
+        SilDetailComponent,
         
         
         
@@ -106,6 +108,7 @@ import { SilService } from './sils/sil.service';
         AtpComponent,
         CmmComponent,
         OwdComponent,
+        SilDetailComponent,
         
     ],
 
