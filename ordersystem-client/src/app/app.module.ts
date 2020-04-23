@@ -42,7 +42,7 @@ import { SigninComponent } from './signin/signin.component';
 import { AtpComponent } from './atp/atp.component';
 import { CmmComponent } from './cmm/cmm.component';
 import { OwdComponent } from './owd/owd.component';
-import { SilDetailComponent } from './sils-detail/sil-detail.component';
+
 import { SilService } from './sils/sil.service';
 
 
@@ -84,7 +84,7 @@ import { SilService } from './sils/sil.service';
         AtpComponent,
         CmmComponent,
         OwdComponent,
-        SilDetailComponent,
+        
         
         
         

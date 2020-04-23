@@ -4,20 +4,24 @@ import { APP_BASE_HREF, HashLocationStrategy, LocationStrategy } from '@angular/
 import { HttpClientModule } from '@angular/common/http';
 
 import { HomeComponent } from './home/home.component';
+
 import { CustomersComponent } from './customers/customers.component';
 import { CustomerDetailComponent } from './customerDetail/customer-detail.component';
 import { CustomerDetailResolver } from './customerDetail/customer-detail.resolver';
+
+import { SilsComponent } from './sils/sils.component';
+
+
+
 import { OrdersComponent } from './orders/orders.component';
 import { OrderDetailComponent } from './orderDetail/order-detail.component';
 import { OrderDetailResolver } from './orderDetail/order-detail.resolver';
+
 import { CreateOrderComponent } from './createOrder/create-order.component';
 import { ProductsComponent } from './products/products.component';
 import { ProductDetailComponent } from './productDetail/product-detail.component';
 import { ProductDetailResolver } from './productDetail/product-detail.resolver';
-import { SilsComponent } from './sils/sils.component';
 
-//import { SilDetailResolver } from './silDetail/sil-detail.resolver';
-//import { SilDetailComponent } from './silDetail/sil-detail.component';
 
 
 import { DocTypesComponent } from './doc-types/doc-types.component';
@@ -46,8 +50,10 @@ const routes: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'logout', component: LogoutComponent, canActivate: [AuthGuardService] },
     { path: 'home', component: HomeComponent },
+
     { path: 'customers', component: CustomersComponent },
     { path: 'customers/:customerId', component: CustomerDetailComponent, resolve: { customer: CustomerDetailResolver } },
+    
     { path: 'orders/create', component: CreateOrderComponent },
     { path: 'orders/:orderId', component: OrderDetailComponent, resolve: { order: OrderDetailResolver }  },
     { path: 'orders', component: OrdersComponent },
@@ -56,7 +62,7 @@ const routes: Routes = [
 
 
     { path: 'sils', component: SilsComponent },
-    //{ path: 'sils/:silId', component: SilDetailComponent, resolve: { sil: SilDetailResolver } },
+   
 
 
 
@@ -81,7 +87,8 @@ const routes: Routes = [
         { provide: LocationStrategy, useClass: HashLocationStrategy },
         CustomerDetailResolver,
         OrderDetailResolver,
-        ProductDetailResolver
+        ProductDetailResolver,
+        
     ]
 })
 export class AppRoutingModule { }
