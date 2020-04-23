@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SilsDetailComponent } from './sils-detail.component';
+import { SilDetailComponent } from './sil-detail.component';
 
 describe('SilsDetailComponent', () => {
-  let component: SilsDetailComponent;
-  let fixture: ComponentFixture<SilsDetailComponent>;
+  let component: SilDetailComponent;
+  let fixture: ComponentFixture<SilDetailComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SilsDetailComponent ]
+      declarations: [ SilDetailComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SilsDetailComponent);
+    fixture = TestBed.createComponent(SilDetailComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

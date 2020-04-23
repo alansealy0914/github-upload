@@ -1,6 +1,6 @@
 export interface Sil{
     id: number;
-    sils: number;
+    silId: string;
     name: string;
     description: string;
     notes: string;

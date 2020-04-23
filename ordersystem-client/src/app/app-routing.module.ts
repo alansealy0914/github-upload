@@ -15,6 +15,11 @@ import { ProductsComponent } from './products/products.component';
 import { ProductDetailComponent } from './productDetail/product-detail.component';
 import { ProductDetailResolver } from './productDetail/product-detail.resolver';
 import { SilsComponent } from './sils/sils.component';
+
+//import { SilDetailResolver } from './silDetail/sil-detail.resolver';
+//import { SilDetailComponent } from './silDetail/sil-detail.component';
+
+
 import { DocTypesComponent } from './doc-types/doc-types.component';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
@@ -48,7 +53,13 @@ const routes: Routes = [
     { path: 'orders', component: OrdersComponent },
     { path: 'products', component: ProductsComponent },
     { path: 'products/:productId', component: ProductDetailComponent, resolve: { product: ProductDetailResolver }   },
+
+
     { path: 'sils', component: SilsComponent },
+    //{ path: 'sils/:silId', component: SilDetailComponent, resolve: { sil: SilDetailResolver } },
+
+
+
     { path: 'doc-types', component: DocTypesComponent },
     { path: 'atp', component: AtpComponent },
     { path: 'cmm', component: CmmComponent },
