@@ -33,6 +33,8 @@ import { OwdComponent } from './owd/owd.component';
 
 
 
+
+
 //import { AuthGuard } from "./shared/auth.guard";
 
 // Angular 8 uses the standard compliant import() statement which will allow you to detect any issues ahead of time:
@@ -69,6 +71,7 @@ const routes: Routes = [
     { path: 'atp', component: AtpComponent },
     { path: 'cmm', component: CmmComponent },
     { path: 'owd', component: OwdComponent },  //canActivate: [AuthGuardService],
+    
 
     //{ path: '', redirectTo: '/home', pathMatch: 'full' }
 ];

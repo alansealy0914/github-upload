@@ -47,8 +47,6 @@ import { SilService } from './sils/sil.service';
 import { SilDetailComponent } from './sil-detail/sil-detail.component';
 
 
-
-
 @NgModule({
     imports: [
         BrowserModule,
@@ -87,10 +85,7 @@ import { SilDetailComponent } from './sil-detail/sil-detail.component';
         OwdComponent,
         SilDetailComponent,
         
-        
-        
-        
-               
+                  
     ],
 
     entryComponents: [
@@ -109,6 +104,8 @@ import { SilDetailComponent } from './sil-detail/sil-detail.component';
         CmmComponent,
         OwdComponent,
         SilDetailComponent,
+        
+
         
     ],
 

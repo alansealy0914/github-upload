@@ -16,16 +16,13 @@
                 <tr>
                     <th>Product Id</th>
                     <th>Name</th>
-                    
                     <th>Price</th>
                 </tr>
             </thead>
             <tbody style="font-size: 12px">
-              
                 <tr *ngFor="let product of products | filter:filter | paginate: { itemsPerPage: 3, currentPage: p }; let i = index">
                     <td><a [routerLink]="['/products', product.id]">{{product.id}}</a></td>
                     <td>{{product.name}}</td>
-                    
                     <td>{{product.price | currency:'USD':'symbol'}}</td>
                 </tr>
             </tbody>
