@@ -14,12 +14,13 @@
             <thead style="font-size: 12px">
                 <tr>
                     <th>ID</th>
-                    <th>Sil ID</th>
+                    <th>Xref</th>
                     <th>Name</th>
                     <th>Description</th>
                     <th>Notes</th>
                     <th>Date</th>
                     <th>Updates</th>
+                    
                 </tr>
             </thead>
             <tbody style="font-size: 12px">
@@ -27,14 +28,16 @@
                 <tr *ngFor="let sil of sils | filter:filter | paginate: { itemsPerPage: 3, currentPage: p }; let i = index">
                     
                     <td>{{sil.id}}</td>
-                    <td><a [routerLink]="['/sils', sil.id]">{{sil.silId}}</a></td>
-                 <!--<td><a href="/assets/cross-ref-diagram/performance_diagram_FA.jpg">{{sil.silId}}</a></td>-->
+                    <!--<td><a href="/assets/cross-ref-diagram/performance_diagram_FA.jpg">x-referecnce</a></td>{{sil.imgUrl}}-->
+                
+                    <td><a routerLink="/sils"><img src="{{ sil.imageUrl }}" alt="Logo" style="margin-left:0px; width:100px"></a></td>
                     <td>{{sil.name}}</td>
                     <td>{{sil.description}}</td>
                     <td>{{sil.notes}}</td>
                     <td>{{sil.date}}</td>
                     <td>{{sil.update}}</td>
-
+                    
+                    <!--<a routerLink="/sils"><img src="{{ product.imageUrl }}" alt="Logo" style="margin-left:100px; width:200px"></a>-->
                 </tr>
             </tbody>
         </table>

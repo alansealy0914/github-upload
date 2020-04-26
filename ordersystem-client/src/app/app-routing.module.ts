@@ -58,6 +58,7 @@ const routes: Routes = [
     { path: 'orders/create', component: CreateOrderComponent },
     { path: 'orders/:orderId', component: OrderDetailComponent, resolve: { order: OrderDetailResolver }  },
     { path: 'orders', component: OrdersComponent },
+
     { path: 'products', component: ProductsComponent },
     { path: 'products/:productId', component: ProductDetailComponent, resolve: { product: ProductDetailResolver }   },
 
@@ -66,13 +67,10 @@ const routes: Routes = [
     { path: 'sils/:silId', component: SilDetailComponent, resolve: { sil: SilDetailResolver } },
 
 
-
     { path: 'doc-types', component: DocTypesComponent },
     { path: 'atp', component: AtpComponent },
     { path: 'cmm', component: CmmComponent },
-    { path: 'owd', component: OwdComponent },  //canActivate: [AuthGuardService],
-    
-
+    { path: 'owd', component: OwdComponent },  //canActivate: [AuthGuardService]
     //{ path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
@@ -90,6 +88,7 @@ const routes: Routes = [
         CustomerDetailResolver,
         OrderDetailResolver,
         ProductDetailResolver,
+        SilDetailResolver
         
     ]
 })
