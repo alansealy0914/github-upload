@@ -30,6 +30,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AtpComponent } from './atp/atp.component';
 import { CmmComponent } from './cmm/cmm.component';
 import { OwdComponent } from './owd/owd.component';
+import { XrefdiagramComponent } from './xrefdiagrams/xrefdiagram.component';
 
 
 
@@ -71,6 +72,8 @@ const routes: Routes = [
     { path: 'atp', component: AtpComponent },
     { path: 'cmm', component: CmmComponent },
     { path: 'owd', component: OwdComponent },  //canActivate: [AuthGuardService]
+
+    { path: 'xrefdiagram', component: XrefdiagramComponent },
     //{ path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
