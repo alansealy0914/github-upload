@@ -27,7 +27,7 @@
               
                 <tr *ngFor="let sil of sils | filter:filter | paginate: { itemsPerPage: 3, currentPage: p }; let i = index">
                     <td>{{sil.id}}</td>
-                    <td><a [routerLink]="['/sils', sil.id]"><img src="{{ sil.imageUrl }}" alt="Logo" style="margin-left:0px; width:100px"></a></td>
+                    <td><a [routerLink]="['/sils', sil.id]"><img src="{{ sil.imageUrl }}" alt="Logo" style="width:100px"></a></td>
                 
                     <!--<td><a routerLink="/sils"><img src="{{ sil.imageUrl }}" alt="Logo" style="margin-left:0px; width:100px"></a></td>-->
                     <td>{{sil.name}}</td>
