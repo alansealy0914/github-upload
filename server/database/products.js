@@ -9,7 +9,7 @@ var products = [
         },
         {
             id: 2,
-            name: 'FG-73R5',
+            name: 'SAIEG73r5',
             description: '73cc 5-Cylinder 4-Stroke Gas Radial Engine',
             price: 1999.99,
             sils: 1002,
@@ -25,7 +25,7 @@ var products = [
         },
         {
             id: 4,
-            name: 'EFL M4360A',
+            name: 'EFL 4360A',
             description: 'Power 360 Brushless Outrunner Motor, 180Kv',
             price: 359.00,
             sils: 1004,
