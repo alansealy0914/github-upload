@@ -30,9 +30,7 @@ import { ProductsComponent } from './products/products.component';
 import { ProductDetailComponent } from './productDetail/product-detail.component';
 import { ProductService } from './products/product.service';
 
-import { SilsComponent } from './sils/sils.component';
-import { SilDetailComponent } from './sil-detail/sil-detail.component';
-import { SilService } from './sils/sil.service';
+
 
 import { AddressService } from './shared/address.service';
 
@@ -80,7 +78,7 @@ import { OwdComponent } from './owd/owd.component';
         ProductsComponent,
         ProductDetailComponent,
         OrderDetailComponent,
-        SilsComponent,
+        
         DocTypesComponent,
         LoginComponent,
         LogoutComponent,
@@ -89,7 +87,7 @@ import { OwdComponent } from './owd/owd.component';
         AtpComponent,
         CmmComponent,
         OwdComponent,
-        SilDetailComponent,
+        
         
                   
     ],
@@ -109,7 +107,7 @@ import { OwdComponent } from './owd/owd.component';
         AtpComponent,
         CmmComponent,
         OwdComponent,
-        SilDetailComponent,
+        
            
     ],
 
@@ -124,7 +122,7 @@ import { OwdComponent } from './owd/owd.component';
         OrderService,
         ProductService,
         AddressService,
-        SilService
+        
     ],
 
     bootstrap: [AppComponent]

@@ -9,9 +9,7 @@ import { CustomersComponent } from './customers/customers.component';
 import { CustomerDetailComponent } from './customerDetail/customer-detail.component';
 import { CustomerDetailResolver } from './customerDetail/customer-detail.resolver';
 
-import { SilsComponent } from './sils/sils.component';
-import { SilDetailResolver } from './sil-detail/sil-detail.resolver';
-import { SilDetailComponent } from './sil-detail/sil-detail.component';
+
 
 import { OrdersComponent } from './orders/orders.component';
 import { OrderDetailComponent } from './orderDetail/order-detail.component';
@@ -63,9 +61,7 @@ const routes: Routes = [
     { path: 'products/:productId', component: ProductDetailComponent, resolve: { product: ProductDetailResolver }   },
 
 
-    { path: 'sils', component: SilsComponent },
-    { path: 'sils/:silId', component: SilDetailComponent, resolve: { sil: SilDetailResolver } },
-
+    
 
     { path: 'doc-types', component: DocTypesComponent },
     { path: 'atp', component: AtpComponent },
@@ -90,7 +86,7 @@ const routes: Routes = [
         CustomerDetailResolver,
         OrderDetailResolver,
         ProductDetailResolver,
-        SilDetailResolver
+        
         
     ]
 })
