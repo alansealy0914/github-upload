@@ -22,6 +22,7 @@ var products = [
             price: 1150.00 ,
             sils: 1003,
             imageUrl: "../assets/img/ar6201.jpg"
+            
         },
         {
             id: 4,

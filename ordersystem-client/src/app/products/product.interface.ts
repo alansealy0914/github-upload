@@ -3,5 +3,6 @@ export interface Product {
     name: string;
     sils: number;
     price: number;
-    imgUrl: string;
+    imgUrl: string; 
+    
 }
