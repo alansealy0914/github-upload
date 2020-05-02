@@ -29,6 +29,7 @@ import { CreateOrderComponent } from './createOrder/create-order.component';
 import { ProductsComponent } from './products/products.component';
 import { ProductDetailComponent } from './productDetail/product-detail.component';
 import { ProductService } from './products/product.service';
+import { ProductSilService } from './productsils/product-sil.service';
 
 
 
@@ -50,6 +51,8 @@ import { SigninComponent } from './signin/signin.component';
 import { AtpComponent } from './atp/atp.component';
 import { CmmComponent } from './cmm/cmm.component';
 import { OwdComponent } from './owd/owd.component';
+import { ProductSilsComponent } from './productsils/product-sils.component';
+import { ProductsilDetailComponent } from './productsilDetail/productsil-detail.component';
 
 @NgModule({
     imports: [
@@ -87,6 +90,8 @@ import { OwdComponent } from './owd/owd.component';
         AtpComponent,
         CmmComponent,
         OwdComponent,
+        ProductSilsComponent,
+        ProductsilDetailComponent,
         
         
                   
@@ -122,6 +127,7 @@ import { OwdComponent } from './owd/owd.component';
         OrderService,
         ProductService,
         AddressService,
+        ProductSilService
         
     ],
 

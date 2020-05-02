@@ -29,7 +29,9 @@ import { AtpComponent } from './atp/atp.component';
 import { CmmComponent } from './cmm/cmm.component';
 import { OwdComponent } from './owd/owd.component';
 
-
+import { ProductSilsComponent } from './productsils/product-sils.component';
+import { ProductsilDetailComponent } from './productsilDetail/productsil-detail.component';
+import { ProductsilDetailResolver } from './productsilDetail/productsil-detail.resolver';
 
 
 
@@ -60,7 +62,8 @@ const routes: Routes = [
     { path: 'products', component: ProductsComponent },
     { path: 'products/:productId', component: ProductDetailComponent, resolve: { product: ProductDetailResolver }   },
 
-
+    { path: 'productsils', component: ProductSilsComponent },
+    { path: 'productsils/:productsilId', component: ProductsilDetailComponent, resolve: { productsil: ProductsilDetailResolver }  },
     
 
     { path: 'doc-types', component: DocTypesComponent },
@@ -86,6 +89,7 @@ const routes: Routes = [
         CustomerDetailResolver,
         OrderDetailResolver,
         ProductDetailResolver,
+        ProductsilDetailResolver,
         
         
     ]

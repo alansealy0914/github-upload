@@ -1,7 +1,7 @@
 var customers = require('./controllers/customerController'),
     products = require('./controllers/productController'),
     orders = require('./controllers/orderController');
-    sils = require('./controllers/silController');
+    sils = require('./controllers/productsilController');
 
 var fs = require('fs');
 
@@ -23,9 +23,9 @@ module.exports = function(app) {
   app.get('/api/customers/:id/orders', orders.getOrdersByCustomer);
 
 
-  /*app.get('/api/sils/', sils.getSils);
-  app.get('/api/sils/:id', sils.getSilById);
-  app.put('/api/sils/:id', sils.getSilById);*/
+  app.get('/api/productsils/', sils.getProductsils);
+  app.get('/api/productsils/:id', sils.getProductsilById);
+  app.put('/api/productsils/:id', sils.getProductsilById);
 
 
   app.get('*', function(req, res) {
