@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 export class HomeComponent {
     title: string;
     constructor(){
-        this.title = 'APOS ADMINISTRATOR';
+        this.title = 'Admin Portal';
     }
 }
