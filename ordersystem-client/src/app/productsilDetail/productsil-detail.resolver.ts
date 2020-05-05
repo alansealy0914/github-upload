@@ -37,6 +37,4 @@ export class ProductsilDetailResolver implements Resolve<ProductSil> {
   }
 }
 
-
-
 /* CHANGE THIS TO POINT TO PRODUCT*/
